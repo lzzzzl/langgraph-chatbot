@@ -1,8 +1,8 @@
 # FastAPI 和 Web 框架
 fastapi==0.115.0              # 更新到最新稳定版
 uvicorn[standard]==0.32.0     # 更新
-pydantic==2.9.2               # 更新到最新 v2 版本
-pydantic-settings==2.6.0      # 更新
+pydantic==2.8.2               # 更新到最新 v2 版本
+pydantic-settings==2.4.0      # 更新
 python-multipart==0.0.12      # 更新
 
 # LangChain 和 LangGraph - 使用最新版本
@@ -11,11 +11,11 @@ langchain==0.3.7              # ⭐ 最新稳定版
 langchain-openai==0.2.8       # OpenAI 集成
 langchain-anthropic==0.3.3    # Anthropic 集成
 langchain-community==0.3.7    # 社区工具
-langchain-core==0.3.15        # 核心抽象（推荐添加）
+langchain-core>=0.3.17        # 核心抽象（修改1：兼容 openai 0.2.8）
 
 # 数据库和存储
 redis[hiredis]==5.2.0         # 更新
-sqlalchemy[asyncio]==2.0.36   # 更新
+sqlalchemy[asyncio]==2.0.35   # 修改2：兼容 langchain-community
 alembic==1.14.0               # 更新
 asyncpg==0.30.0               # PostgreSQL 异步驱动
 aiosqlite==0.20.0             # SQLite 异步驱动
